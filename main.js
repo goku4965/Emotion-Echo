@@ -13,7 +13,7 @@ function take_snapshot(){
 }
 console.log("ml5 version",ml5.version);
 
-classifier=ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/v-Rq2AYeS/model.json',modelLoaded);
+classifier=ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/Igenk8GGX/model.json',modelLoaded);
 function modelLoaded() { 
     console.log('Model Loaded!'); 
 } function check() { 
@@ -36,10 +36,10 @@ function gotResult(error, results) {
 
 function getRemedie(emotion){
     var remedies = {
-        "happy":["Be happy like this always"],
-        "sad" : ["Listen to music like :- Heat waves or any song you like","Share your feelings with somebody","Do meditation"],
-        "angry":["Count till 100","going for a walk","Read a book"],
-        "crying":["Excuse yourself and release your emotions in private","Think about something repetitious, like a poem you memorized","Focus on something else like memories,etc."]
+        "Happy":["Be happy like this always"],
+        "Sad" : ["Listen to music like :- Heat waves or any song you like","Share your feelings with somebody","Do meditation"],
+        "Angry":["Count till 100","going for a walk","Read a book"],
+        "Crying":["Excuse yourself and release your emotions in private","Think about something repetitious, like a poem you memorized","Focus on something else like memories,etc."]
     };
     var selectedRemedie=remedies[emotion];
     if(selectedRemedie){
